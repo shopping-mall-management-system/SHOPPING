@@ -17,10 +17,13 @@ if($result->num_rows > 0){
         "<div class='cart-container'>
             <div class='cart-card'>
                 <img src='", $row["image_path"], "' alt='Product Image'>
+
+                <div class='cart-details'>
                 <h3>", $row["name_product"],"</h3>
                 <p>Price: ", $row["price"], "</p>
                 <label for='p", $row["num_product"],"'> Input Quantity: </label>
                 <input type='number' id='p", $row["num_product"],"' min='1' max='", $row["quantity"], "'>
+                </div>
             </div>
         </div>";
 	}
