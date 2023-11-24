@@ -40,13 +40,14 @@
 
   .cart-container {
     width: 800px;
-    height: 300px;
     gap: 10px;
     padding: 10px;
     margin-bottom: 20px;
+    display: fl;
   }
   .cart-card {
-    display: flex; 
+    display: flex;
+    justify-content: space-between;
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
@@ -58,15 +59,14 @@
       margin-right: 10px; 
   }
 
-  .cart-details {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; 
-  }
-
   .delete-button {
     padding: 5px 10px;
     margin-top: 10px;
+  }
+  
+  #buy {
+    margin-left: auto;
+    margin-right: 20px;
   }
 
   .selection-top{

@@ -4,6 +4,29 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="main.css"> <!-- CSS 파일을 연결합니다 -->
       <title>Personal exercise management system</title>
+      <style>
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+        .product-card {
+            width:1000px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-card button {
+            padding: 5px 10px;
+            margin-top: 10px;
+        }
+    </style>
   </head>
 
   <!-- header-top: 상단 로그인, 회원가입 버튼 -->
@@ -36,15 +59,12 @@
   <main>
     <selection class="selection-top">
       <div class="container">
-          <?php include "product_cart.php"; ?>
-          <div id="buy">
-            <button type='button' onclick='purchase();'>주문하기</button>
-          </div>
-      </div>
+        <!-- <?php include "productlist.php"; ?> -->
+    </div>
     </selection>
+
     
     <selction style="color:black;">
-
           <h4>Young TEDx speaker and #1 Online JEE Educator | Founder of 5 YouTube Channels with 2.5 million young hustlers. </h4>
           <h5>I help students across India find their right career path. I have been a guest speaker at 22 Colleges including Top IITs, BITS Pilani, IIIT's, NIT's, SRCC, Jadavpur University etc. I am the #1 Educator of JEE on India's biggest online platform
               and I believe that everyone has the right to quality education and with the help of my social media platforms, I have helped millions of students find their path to success in the last 5 years. In the next few decades, India will rise
@@ -60,6 +80,5 @@
     </selection>
       
     </main>
-    <script type='text/javascript' src='javascript2.js'></script>
   </body>
 </html>

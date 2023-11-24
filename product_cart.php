@@ -17,10 +17,12 @@ if($result->num_rows > 0){
         "<div class='cart-container'>
             <div class='cart-card'>
                 <img src='", $row["image_path"], "' alt='상품 이미지'>
-                <div class='cart-details'>
+                <div>
                     <h3>", $row["name_product"],"</h3>
                     <p>가격: ", $row["price"], "</p>
-                    <label for='p", $row["num_product"],"'> Input Quantity: </label>
+                </div>
+                <div>
+                    <p>Input Quantity</p>
                     <input type='number' id='p", $row["num_product"],"' min='1' max='", $row["quantity"], "'>
                 </div>
                 <button type='button' onclick='deleteinCart(\"", $row["num_product"], "\");'>삭제</button>
