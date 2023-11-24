@@ -3,7 +3,8 @@ function purchase() {
 
     for (var i = 0; i < p_c.length; i++){
         console.log("id : ", p_c[i].id);
-        console.log("val : ", p_c[i].innerHTML);
+        console.log("idval : ", document.getElementById(p_c[i]).id.replace(p,''));
+        console.log("val : ", p_c[i].textContent);
     }
     
 }
