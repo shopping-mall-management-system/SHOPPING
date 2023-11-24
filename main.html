@@ -5,13 +5,15 @@
       <link rel="stylesheet" href="main.css"> <!-- CSS 파일을 연결합니다 -->
       <title>Personal exercise management system</title>
       <style>
-        .product-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            padding: 10px;
-        }
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
         .product-card {
+            width:1000px;
             border: 1px solid #ddd;
             padding: 10px;
             text-align: center;

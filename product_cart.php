@@ -14,13 +14,17 @@ $result = $conn->query($sql);
 if($result->num_rows > 0){
 	while($row = $result->fetch_assoc()){
 		echo 
-        "<div class='product-container'>
-            <div class='product-card'>
+        "<div class='cart-container'>
+            <div class='cart-card'>
                 <img src='", $row["image_path"], "' alt='Product Image'>
+
+                <div class='cart-details'>
                 <h3>", $row["name_product"],"</h3>
                 <p>Price: ", $row["price"], "</p>
                 <label for='p", $row["num_product"],"'> Input Quantity: </label>
                 <input type='number' id='p", $row["num_product"],"' min='1' max='", $row["quantity"], "'>
+                <button type='button' onclick='deleteinCart();'>삭제</button>
+                </div>
             </div>
         </div>";
 	}
