@@ -6,15 +6,20 @@ $user = 'user';
 
 $selectValue = isset($_POST['selected']) ? $_POST['selected']: '';
 
+$sql = "select id, num_product from cart where id = '$user' and num_product = '$selectValue'";
+$result = $conn->query($sql);
 
-$sq1 = "INSERT INTO cart(id, num_product) values ('$user', '$selectValue');";
-$result = mysqli_query($conn, $sq1);
-
-if (!$result) {
-    printf("에러: %s\n", mysqli_error($conn));
-    echo $conn->error;
+if($result->num_rows > 0){
+    echo "error";
+}else{
+    echo "success";
+    $sq1 = "INSERT INTO cart(id, num_product) values ('$user', '$selectValue');";
+    $result = mysqli_query($conn, $sq1);
+    
+    if (!$result) {
+        echo $conn->error;
+    }
 }
-
 
 $conn->close();
 ?>
