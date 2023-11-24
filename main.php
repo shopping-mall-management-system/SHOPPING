@@ -3,7 +3,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="main.css"> <!-- CSS 파일을 연결합니다 -->
-      <title>Personal exercise management system</title>
+      <title>WELCOME COUPANG SHOPPING MALL</title>
   </head>
 
   <!-- header-top: 상단 로그인, 회원가입 버튼 -->
@@ -22,7 +22,7 @@
 
   <!-- header-top: 로고 title -->
   <header>
-    <h1>Personal exercise management system</h1> 
+    <h1>WELCOME COUPANG SHOPPING MALL</h1> 
   </header>
     
   <nav class="navbar">
