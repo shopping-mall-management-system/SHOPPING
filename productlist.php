@@ -13,11 +13,11 @@ if($result->num_rows > 0){
 		echo 
         "<div class='product-container'>
             <div class='product-card'>
-                <img src='", $row["image_path"], "' alt='»óÇ° ÀÌ¹ÌÁö'>
+                <img src='", $row["image_path"], "' alt='ìƒí’ˆ ì´ë¯¸ì§€'>
                 <h3>", $row["name_product"],"</h3>
-                <p>°¡°Ý: ", $row["price"], "</p>
-                <p>Àç°í·®: ", $row["quantity"], "</p>
-                <button type='button' onclick='addToCart();'>Àå¹Ù±¸´Ï¿¡ Ãß°¡</button>
+                <p>ê°€ê²©: ", $row["price"], "</p>
+                <p>ìž¬ê³ ëŸ‰: ", $row["quantity"], "</p>
+                <button type='button' onclick='addToCart();'>ìž¥ë°”êµ¬ë‹ˆ ì¶”ê°€</button>
             </div>
         </div>";
 	}
