@@ -23,6 +23,7 @@ if($result->num_rows > 0){
                 <p>Price: ", $row["price"], "</p>
                 <label for='p", $row["num_product"],"'> Input Quantity: </label>
                 <input type='number' id='p", $row["num_product"],"' min='1' max='", $row["quantity"], "'>
+                <button type='button' onclick='deleteinCart();'>삭제</button>
                 </div>
             </div>
         </div>";
