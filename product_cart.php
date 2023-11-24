@@ -5,7 +5,7 @@ include ("ipconfig.php");
 mysqli_select_db($conn, $dbname) or die('DB selection failed');
 
 $sql = "
-SELECT P.num_product, P.image_path, P.name_product, P.price
+SELECT P.num_product, P.image_path, P.name_product, P.price, P.quantity
 From cart C JOIN product P
 on C.num_product = P.num_product;";
 
@@ -20,7 +20,7 @@ if($result->num_rows > 0){
                 <h3>", $row["name_product"],"</h3>
                 <p>Price: ", $row["price"], "</p>
                 <label for='p", $row["num_product"],"'> Input Quantity: </label>
-                <input type='number' id='p", $row["num_product"],"'>
+                <input type='number' id='p", $row["num_product"],"' min='1' max='", $row["quantity"], "'>
             </div>
         </div>";
 	}
