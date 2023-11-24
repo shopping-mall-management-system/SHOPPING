@@ -9,7 +9,7 @@ function purchase() {
         console.log("idval : ", pc.id.replace(/\D/g,''));
         console.log("val : ", pc.value);
 
-        ids.push(p_c[i].id);
+        ids.push(p_c[i].id.replace(/\D/g,''));
         values.push(pc.value);
     }
 
@@ -21,8 +21,7 @@ function purchase() {
     var xhr = new XMLHttpRequest();
 
     // POST 요청 설정
-    xhr.open('POST', 'product_order.php', true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
+     xhr.setRequestHeader('Content-Type', 'application/json');
 
     // 서버 응답 처리
     xhr.onreadystatechange = function () {
