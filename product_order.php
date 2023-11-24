@@ -12,7 +12,7 @@ $array2 = $data['array2'];
 for ($i = 0; $i < count($array1); $i++){
     $id = $array1[$i];
     $value = $array2[$i];
-    $sql = "UPDATE cart SET num = $value WHERE id = $id";
+    $sql = "UPDATE cart SET quantity = $value WHERE num_product = $id;";
 
     $result = $conn->query($sql);
 

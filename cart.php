@@ -3,6 +3,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="main.css"> <!-- CSS 파일을 연결합니다 -->
+      <link rel="stylesheet" href="cart.css">
       <title>Personal exercise management system</title>
   </head>
 
@@ -41,6 +42,34 @@
             <button type='button' onclick='purchase();'>주문하기</button>
           </div>
       </div>
+
+      <div class = "input_delivery" style = "background-color: red; heigth:100%;">
+          <form action="process_form.php" method="POST">
+                <div class="form-group" >
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+          </div>     
     </selection>
     
     <selction style="color:black;">
@@ -61,5 +90,6 @@
       
     </main>
     <script type='text/javascript' src='javascript3.js'></script>
+    <script type='text/javascript' src='javascript2.js'></script>
   </body>
 </html>
