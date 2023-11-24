@@ -39,12 +39,13 @@
       <div class="container">
           <?php include "product_cart.php"; ?>
           <div id="buy">
-            <button type='button' onclick='purchase();'>주문하기</button>
+            
           </div>
       </div>
 
-      <div class = "input_delivery" style = "background-color: red; heigth:100%;">
-          <form action="process_form.php" method="POST">
+      <div class = "input_delivery" style = "heigth:100%;">
+        <h2> 배송지 정보 입력 </h2>
+          <form action="order.php" method="POST">
                 <div class="form-group" >
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
@@ -64,10 +65,15 @@
                     <label for="comment">Comment:</label>
                     <textarea id="comment" name="comment"></textarea>
                 </div>
-
+                <div class ="form-group">
+                    <button type='button' onclick='purchase();'>주문하기</button>
+                </div>  
+              
+                <!--
                 <div class="form-group">
                     <button type="submit">Submit</button>
                 </div>
+              -->
             </form>
           </div>     
     </selection>

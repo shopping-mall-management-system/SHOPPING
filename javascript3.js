@@ -20,6 +20,7 @@ function purchase() {
 
     var xhr = new XMLHttpRequest();
 
+    xhr.open('POST', 'product_order.php', true);
     // POST 요청 설정
      xhr.setRequestHeader('Content-Type', 'application/json');
 
