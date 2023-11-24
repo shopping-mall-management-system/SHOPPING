@@ -60,6 +60,6 @@
     </selection>
       
     </main>
-    <script type='text/javascript' src='javascript2.js'></script>
+    <script type='text/javascript' src='javascript3.js'></script>
   </body>
 </html>
