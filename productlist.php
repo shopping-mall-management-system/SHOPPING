@@ -15,8 +15,8 @@ if($result->num_rows > 0){
             <div class='product-card'>
                 <img src='", $row["image_path"], "' alt='상품 이미지'>
                 <h3>", $row["name_product"],"</h3>
-                <p>가격: ", $row["price"], "</p>
-                <p>재고량: ", $row["quantity"], "</p>
+                <p>가격: ", $row["price"], "원</p>
+                <p>재고량: ", $row["quantity"], "개</p>
                 <button type='button' onclick='addToCart(\"",$row["num_product"],"\");'>장바구니 추가</button>
             </div>
         </div>";

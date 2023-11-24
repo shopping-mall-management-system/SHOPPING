@@ -4,39 +4,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="main.css"> <!-- CSS 파일을 연결합니다 -->
       <title>Personal exercise management system</title>
-
-      <style>
-        .container {
-            width: 800px;
-            flex-wrap: wrap;
-            display:flex;
-            justify-content: flex-start;
-            
-        }
-        .product-container {
-            width: 200px;
-            height: 300px;
-           
-            gap: 10px;
-            padding: 10px;
-            margin-bottom: 20px;
-        }
-        .product-card {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-        }
-        .product-card img {
-            width: 100px;
-            height: 100px;
-        }
-        .product-card button {
-            padding: 5px 10px;
-            margin-top: 10px;
-        }
-    </style>
-
-
   </head>
 
   <!-- header-top: 상단 로그인, 회원가입 버튼 -->
@@ -91,5 +58,6 @@
     </selection>
       
     </main>
+    <script type='text/javascript' src='javascript2.js'></script>
   </body>
 </html>

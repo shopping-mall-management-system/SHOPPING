@@ -16,20 +16,19 @@ if($result->num_rows > 0){
 		echo 
         "<div class='cart-container'>
             <div class='cart-card'>
-                <img src='", $row["image_path"], "' alt='Product Image'>
-
+                <img src='", $row["image_path"], "' alt='상품 이미지'>
                 <div class='cart-details'>
-                <h3>", $row["name_product"],"</h3>
-                <p>Price: ", $row["price"], "</p>
-                <label for='p", $row["num_product"],"'> Input Quantity: </label>
-                <input type='number' id='p", $row["num_product"],"' min='1' max='", $row["quantity"], "'>
-                <button type='button' onclick='deleteinCart();'>삭제</button>
+                    <h3>", $row["name_product"],"</h3>
+                    <p>가격: ", $row["price"], "</p>
+                    <label for='p", $row["num_product"],"'> Input Quantity: </label>
+                    <input type='number' id='p", $row["num_product"],"' min='1' max='", $row["quantity"], "'>
                 </div>
+                <button type='button' onclick='deleteinCart(\"", $row["num_product"], "\");'>삭제</button>
             </div>
         </div>";
 	}
 }else{
-	echo "0 Results";
+	echo "장바구니에 담긴 상품이 없습니다.";
 }
 
 $conn->close();
