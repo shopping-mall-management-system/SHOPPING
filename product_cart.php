@@ -14,8 +14,8 @@ $result = $conn->query($sql);
 if($result->num_rows > 0){
 	while($row = $result->fetch_assoc()){
 		echo 
-        "<div class='product-container'>
-            <div class='product-card'>
+        "<div class='cart-container'>
+            <div class='cart-card'>
                 <img src='", $row["image_path"], "' alt='Product Image'>
                 <h3>", $row["name_product"],"</h3>
                 <p>Price: ", $row["price"], "</p>
