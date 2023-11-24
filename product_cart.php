@@ -16,10 +16,10 @@ if($result->num_rows > 0){
 		echo 
         "<div class='product-container'>
             <div class='product-card'>
-                <img src='", $row["image_path"], "' alt='상품 이미지'>
+                <img src='", $row["image_path"], "' alt='Product Image'>
                 <h3>", $row["name_product"],"</h3>
-                <p>가격: ", $row["price"], "</p>
-                <label for='p", $row["num_product"],"> 갯수입력: </label>
+                <p>Price: ", $row["price"], "</p>
+                <label for='p", $row["num_product"],"> Input Quantity: </label>
                 <input type='number' id='p", $row["num_product"],"'>
             </div>
         </div>";
