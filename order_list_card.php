@@ -18,7 +18,7 @@ if($result->num_rows > 0){
 	while($row = $result->fetch_assoc()){
 		echo 
         "<div class='order-container'>
-            <div class='order_card'>
+            <div class='order-card'>
                 <img src='", $row["image_path"], "' alt='상품 이미지'>
                 <div>
                     <h3>", $row["name_product"],"</h3>
