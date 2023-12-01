@@ -45,7 +45,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </label>
             <input type="submit" value="Login">
         </form>
-        <a href="register.php"><button>Register</button></a>
+        <a href="register.php" id="login-form"><button>Register</button></a>
     </div>
 </body>
 
