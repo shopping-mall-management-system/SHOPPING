@@ -11,10 +11,10 @@
       <div class="header-top-right">
         <ul>
           <li class="header-top-contact">
-            <a href="#">Log In</a>
+            <a href="login.php">Log In</a>
           </li>
           <li class="header-top-contact">
-              <a href="#">Sign Up</a>
+              <a href="register.php">Sign Up</a>
           </li>
         </ul>
       </div>
