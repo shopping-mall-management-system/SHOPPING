@@ -2,7 +2,8 @@
 
 include ("ipconfig.php");
 mysqli_select_db($conn, $dbname) or die('DB selection failed');
-$user = 'user';
+session_start();
+$user = $_SESSION["id"];
 
 $data = json_decode(file_get_contents("php://input"), true);
 
