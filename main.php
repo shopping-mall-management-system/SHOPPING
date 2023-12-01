@@ -5,6 +5,7 @@ $category = isset($_GET['category']);
 $search = isset($_GET['search']);
 mysqli_select_db($conn, $dbname) or die('DB selection failed');
 
+session_start();
 $userId = $_SESSION["id"];
 echo "로그인한 사용자의 ID는: " . $userId;
       

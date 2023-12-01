@@ -25,7 +25,7 @@ if($result->num_rows > 0){
         $sql = "INSERT INTO `order` (`id`, `num_product`, `quantity`, `address`, `comment`, `phone`, `name`) 
                 VALUES ('$user', '" . $row['num_product'] . "', '" . $row['quantity'] . "', '$address', '$comment', '$phone', '$name')";
         $result1 = mysqli_query($conn, $sql);
-        include "cart.php";
+
         if (!$result1) {
             echo $conn->error;
         }
@@ -33,6 +33,6 @@ if($result->num_rows > 0){
 }else{
     echo "error";
 }
-
+include "cart.php";
 $conn->close();
 ?>
