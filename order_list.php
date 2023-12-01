@@ -1,19 +1,3 @@
-<?php
-include_once 'dbconfig.php';
-mysqli_select_db($conn, $dbname) or die('DB selection failed');
-
-$category = isset($GET_['category'];)
-$search = isset($GET_['search']);
-
-if(empty($search)){
-  $sql = "SELECT A.exercise_code, A.exercise_name, A.image_path, B.category_name 
-  FROM exercise_list A, exercise_category B
-  WHERE A.category_code = B.category_code
-  ORDER BY A.exercise_code;";
-}
-
-?>
-
 <html>
   <head>
       <meta charset="UTF-8">
@@ -50,30 +34,12 @@ if(empty($search)){
   <!-- main -->
   <body>
   <main>
-  <div class="search_box">
-      <form action="exercise_list.php" method="get">
-          
-          <select name="category">
-            <option value="exercise_name">운동이름</option>
-            <option value="category_name">종류</option>
-            <option value="target">운동 부위</option>
-          </select>
-          <input type="search" name="search" size="40" style ="width:30%; border:1px solid black;"/>
-          <button>검색</button>
-      </form>
-</div>
 
 
 
-    <selection class="selection-top">
-    <div class="container">
-        <?php include "productlist.php"; ?>
-        
-    </div>
 
-    </selection>
 
-    
+
     <selction style="color:black;">
           <h4>Young TEDx speaker and #1 Online JEE Educator | Founder of 5 YouTube Channels with 2.5 million young hustlers. </h4>
           <h5>I help students across India find their right career path. I have been a guest speaker at 22 Colleges including Top IITs, BITS Pilani, IIIT's, NIT's, SRCC, Jadavpur University etc. I am the #1 Educator of JEE on India's biggest online platform
