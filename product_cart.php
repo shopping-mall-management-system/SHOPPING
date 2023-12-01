@@ -3,11 +3,12 @@
 include ("ipconfig.php");
 
 mysqli_select_db($conn, $dbname) or die('DB selection failed');
-
-$sql = "
-SELECT P.num_product, P.image_path, P.name_product, P.price, P.quantity
-From cart C JOIN product P
-on C.num_product = P.num_product;";
+session_start();
+$user = $_SESSION["id"];
+$sql = "SELECT P.num_product, P.image_path, P.name_product, P.price, P.quantity
+        From cart C JOIN product P
+        on C.num_product = P.num_product
+        WHERE id = '$user';";
 
 $result = $conn->query($sql);
 
