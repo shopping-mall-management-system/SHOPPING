@@ -3,11 +3,14 @@
 include ("ipconfig.php");
 
 mysqli_select_db($conn, $dbname) or die('DB selection failed');
+session_start();
+$user = $_SESSION["id"];
 
 $sql = "
 SELECT P.num_product, P.image_path, P.name_product, P.price, O.quantity
 From order O JOIN product P
-on O.num_product = P.num_product;
+on O.num_product = P.num_product
+WHERE O.id = '$user';
 ";
 
 
