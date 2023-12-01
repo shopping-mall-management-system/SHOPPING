@@ -6,20 +6,6 @@
       <title>WELCOME COUPANG SHOPPING MALL</title>
   </head>
 
-  <!-- header-top: 상단 로그인, 회원가입 버튼 -->
-  <header class="header-top">
-      <div class="header-top-right">
-        <ul>
-          <li class="header-top-contact">
-            <a href="#">Log In</a>
-          </li>
-          <li class="header-top-contact">
-              <a href="#">Sign Up</a>
-          </li>
-        </ul>
-      </div>
-  </header>
-
   <!-- header-top: 로고 title -->
   <header>
     <h1>WELCOME COUPANG SHOPPING MALL</h1> 
@@ -29,6 +15,7 @@
         <ul class="navbar__menu">
           <li><a href="./main.php">Home</a></li>
           <li><a href="./cart.php" >장바구니</a></li>
+          <li><a href="./order_list.php" >구매내역</a></li>
       </ul>
   </nav>
   <!-- main -->
@@ -36,7 +23,7 @@
   <main>
     <selection class="selection-top">
     <div class="container">
-        <?php include "productlist.php"; ?>
+        <?php include "order_list_card.php"; ?>
         
     </div>
 
