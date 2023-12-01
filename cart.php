@@ -30,6 +30,7 @@
         <ul class="navbar__menu">
           <li><a href="./main.php">Home</a></li>
           <li><a href="./cart.php" >장바구니</a></li>
+          <li><a href="./order_list.php" >주문내역</a></li>
       </ul>
   </nav>
   <!-- main -->

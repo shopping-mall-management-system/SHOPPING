@@ -2,7 +2,8 @@
 
 include ("ipconfig.php");
 mysqli_select_db($conn, $dbname) or die('DB selection failed');
-$user = 'user';
+session_start();
+$user = $_SESSION["id"];
 
 $selectValue = isset($_POST['selected']) ? $_POST['selected']: '';
 

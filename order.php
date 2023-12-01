@@ -2,7 +2,9 @@
 
 include ("ipconfig.php");
 mysqli_select_db($conn, $dbname) or die('DB selection failed');
-$user = 'user';
+
+session_start();
+$user = $_SESSION["id"];
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // POST로 전송된 데이터 수신

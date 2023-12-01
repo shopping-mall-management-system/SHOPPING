@@ -1,8 +1,10 @@
 <?php
 include ("ipconfig.php");
 mysqli_select_db($conn, $dbname) or die('DB selection failed');
+mysqli_select_db($conn, $dbname) or die('DB selection failed');
+session_start();
+$user = $_SESSION["id"];
 
-$user = 'user';
 $selectValue = isset($_POST['selected']) ? $_POST['selected']: '';
 
 $sql = "select id, num_product from cart where id = '$user' and num_product = '$selectValue'";
