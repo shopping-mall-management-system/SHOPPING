@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
     <div class="login-wrapper">
-        <h2>Login</h2>
+        <h2>Register</h2>
         <form action="register.php" method="post" id="login-form">
             <input type="id" name="id" placeholder="id">
             <input type="password" name="password" placeholder="비밀번호">
