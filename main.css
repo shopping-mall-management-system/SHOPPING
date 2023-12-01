@@ -1,11 +1,6 @@
 * {
     box-sizing: border-box;
   }
-  
-  /*
-  https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2F736x%2F98%2Fa8%2F31%2F98a831978436213437c0025ebeba63d2.jpg
-  */
-
   .container {
       width: 800px;
       flex-wrap: wrap;
