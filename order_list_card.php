@@ -29,7 +29,9 @@ if($result->num_rows > 0){
                 <div>
                     <p>주문개수</p>
                     <p> ", $row["quantity"], "</p>
-                </div>";
+                </div>
+            </div>
+        </div>";
 	}
 }else{
 	echo "주문한 상품이 없습니다.";
